@@ -1,0 +1,21 @@
+.parking-lot-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, border-width 0.3s ease; /* 테두리 두께 전환 추가 */
+    border-width: 20px; /* 테두리 두께를 2px로 증가 */
+  }
+  
+  /* 마우스 오버 시 테두리 색상 변경 */
+  .parking-lot-item:hover {
+    border-color: #F7819F; /* 테두리 색상을 진하게 변경 */
+    border-width: 20px; /* 테두리 두께를 2px로 증가 */
+  }
+  
+  .parking-lot-item.highlighted {
+    border-color: #F7819F; /* 테두리 색상을 진하게 변경 */
+    border-width: 20px; /* 테두리 두께를 2px로 증가 */
+    background-color: #f0f0f0; /* 배경색 변경 */
+  }

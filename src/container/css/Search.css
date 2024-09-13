@@ -1,0 +1,96 @@
+.container {
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 200px;
+}
+
+.address-list {
+    margin-top: 8px;
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+.address-list-item {
+    cursor: pointer;
+}
+
+.address-list-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.small-typography {
+    font-size: 0.75rem;
+}
+
+.small-textfield .MuiInputBase-input {
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+}
+
+.small-button {
+    font-size: 0.625rem;
+}
+
+/* 작은 화면 (모바일) */
+@media (max-width: 600px) {
+    .container {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px;
+    }
+    .small-typography {
+        font-size: 0.65rem;
+    }
+    .small-textfield .MuiInputBase-input {
+        font-size: 0.65rem;
+    }
+    .small-button {
+        font-size: 0.55rem;
+    }
+}
+
+/* 중간 화면 (태블릿) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 15px;
+    }
+    .small-typography {
+        font-size: 0.7rem;
+    }
+    .small-textfield .MuiInputBase-input {
+        font-size: 0.7rem;
+    }
+    .small-button {
+        font-size: 0.6rem;
+    }
+}
+
+/* 큰 화면 (데스크탑) */
+@media (min-width: 1025px) {
+    .container {
+        width: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 20px;
+    }
+    .small-typography {
+        font-size: 0.75rem;
+    }
+    .small-textfield .MuiInputBase-input {
+        font-size: 0.75rem;
+    }
+    .small-button {
+        font-size: 0.625rem;
+    }
+}
